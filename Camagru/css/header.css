@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(0, 137, 255);
+	border-bottom : 3px solid rgb(0, 84, 153);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	height: auto;
+	width: 100%;
+	max-height: 10vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 50px;
+}
+.header_right {
+	height: 100%;
+	width: 40%;
+	min-width: 250px;
+}
+.button {
+	background: rgb(0, 84, 153);
+	height: 30%;
+	width: 97%;
+	border-radius: 10px;
+	font-size: 2vh;
+	color: white;
+	font-family: fantasy;
+}
+.button:hover {
+	background-color: rgb(151, 194, 229);
+	color:  rgb(0, 137, 255);
+
+}
+form > .button{
+	width: 30%;
+}
+.log_input {
+	width: 33%;
+	border-radius: 8px;
+	font-size: 1vh;
+}

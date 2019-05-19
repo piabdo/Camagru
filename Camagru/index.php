@@ -1,53 +1,39 @@
 <html>
 <head>
 	<title>CaMonQ</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">  
 </head>
+<?php
+	if(!empty($_POST))
+?>
+
 <body>
-	<div class="header">
-		<h1>CaMonQ</h1>
-		
-			<form id="1" method="post" action="login.php" class="header_right">
-					<?php 
-					// if(!isset($_SESSION['login'])){
-					// 		echo '<input class ="log_input" type="text" name="login" value="" placeholder="Identifiant"/>
-					// 		<input class ="log_input" type="password" name="passwd" value="" placeholder="Mot de passe"/>
-					// 		<br />
-					// 		<input class="button" type="submit" name="submit" value="VOUS CONNECTER"/>
-					// 		<input class="button" type="submit" name="submit" value="CREER UN COMPTE"/>';
-					// 	}
-					// 	if (isset($_SESSION['login'])){
-							echo'Vous etes connecte <br /> ';
-							echo '<input class="button" type="submit" name="submit" value="VOUS DECONNECTER"/>
-					 		<input class="button" type="submit" name="submit" value="MODIFIERVOTRE COMPTE"/>';
-						// }
-					?>
-			</form>
-			<!-- <button class="button">Logout</button> -->
-	</div>
+	<?php require 'include/header.php'?>
 	<div class="menu">
-		<div class="m_pictures">
-			<div>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<!-- <p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p>
-				<p class="d_img"></p> -->
-			</div>
-			<p class="d_arrows"></p>
-			<p class="d_arrows"></p>
+		<?php if(0):?>
+		<div class="m_webcam">
+			<div class="d_webcam"></div>
+			<button class="button">TakePicture</button>
 		</div>
+		<?php endif?>
+		<?php if(1):?>
+		<div class="m_pictures">
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+			<p class="d_img"></p>
+		</div>
+		<?php endif?>
 	</div>
-	<div class="footer">
-		<p class="cop">© CaptainFracas</p>
-	</div>
+	<?php require 'include/footer.php'?>
 </body>
 </html>
